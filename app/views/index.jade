@@ -1,0 +1,46 @@
+doctype
+html
+  head
+    link(rel="stylesheet", href="/vendor/bootstrap/dist/css/bootstrap.min.css")
+    link(rel="stylesheet", href="/styles/app.css")
+    //link(rel="stylesheet", href="//www.jm3.net/vendor/fonts/league-gothic/loader.css")
+      link(rel="stylesheet", href="//www.jm3.net/vendor/fonts/montserrat/loader.css")
+
+    title SCINTILLATING YET FRIENDLY PAGE TITLE
+
+  body
+    .row
+      .col-md-6
+        h1 Compelling Name
+        h2 Slogan and words
+
+        .feature-list
+          ul
+            li deploy to s3 with 
+              a(href="https://www.npmjs.com/package/gulp-awspublish")
+                code gulp deploy
+            li live-reloading in development with 
+              a(href="http://www.browsersync.io") 
+                code browser sync
+              |  of jade, less, css, html, assets (with <a href="http://localhost:3001/">web console</a>)
+            li load dependencies in stable order with 
+              a(href="http://requirejs.org/")
+                code require.js
+            li 
+              | install + version front-end dependencies with 
+              a(href="http://bower.io") 
+                code bower install ...
+              ul
+                li <b>skel</b> includes 
+                  a(href="http://getbootstrap.com/") bootstrap, 
+                  a(href="http://d3js.org/") d3, 
+                  a(href="http://requirejs.org/") require.js, 
+                  a(href="https://jquery.com/") jquery 
+                  em (required by bootstrap)
+            li more or less bootstrap theme-able 
+              a(href="bootstrap-theme-example.html") (see example)
+
+      .col-md-12
+        // page content might go here
+
+    script(data-main="js/index", src="/vendor/requirejs/require.js")
